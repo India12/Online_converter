@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Converter (miles, km)</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  <h1>Converter (miles, kilometers):</h1>
+
+  <!--dropdown-->
+
+  <form action="/" method="post">
+    <input type="number" name="first_number"/>
+
+    <select name="unitlist">
+      <option value="miles">Miles</option>
+      <option value="km">Km</option>
+    </select>
+
+    <button>Convert</button>
+  </form>
+
+  <h2>{{ first_number }} {{ selected_unit }} = {{ second_num }} {{ second_unit }}</h2>
+
+</body>
+</html>
